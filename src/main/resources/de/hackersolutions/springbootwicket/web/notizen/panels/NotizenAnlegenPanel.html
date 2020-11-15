@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<wicket:panel>
+    <div class="wrapper">
+        <h2>Notizen anlegen</h2>
+        <form wicket:id="notizForm">
+            <div wicket:id="feedback">[Feedback Panel]</div>
+            <div class="form-group">
+                <label for="notice-headline">Überschrift:</label>
+                <input wicket:id="notizTitel" class="form-control" id="notice-headline" type="text"
+                       placeholder="Überschrift">
+            </div>
+            <div class="form-group">
+                <label for="notice-text">Überschrift:</label>
+                <textarea wicket:id="notizText" class="form-control" id="notice-text" placeholder="Text"></textarea>
+            </div>
+            <input wicket:id="notizSpeichern" class="btn btn-primary" type="submit" value="Speichern"/>
+        </form>
+    </div>
+</wicket:panel>
+</body>
+</html>
